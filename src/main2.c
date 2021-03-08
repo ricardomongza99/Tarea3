@@ -1,7 +1,7 @@
 // Uses dynamic library - can change after compiling main
 
 #include <stdio.h>
-#include "../dynamic/lib_distancias.so"   // dynamic library
+#include "../lib/src/distancias.h" 
 
 int main(int argc, char *argv[]) {
     float dlrecta;
