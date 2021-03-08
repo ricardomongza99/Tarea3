@@ -1,7 +1,7 @@
 // Uses static library - after compiling cannot change until compiling again
 
 #include <stdio.h>
-#include "../static/lib_distancias.a"   // static library
+#include "../lib/src/distancias.h"  // static library
 
 int main(int argc, char *argv[]) {
     float dlrecta;
@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
     	
     dlrecta = dlr(3, 4, 10, 12);
 
-    printf("Distancia en línea recta: %d\n", dlrecta);
+    printf("Distancia en línea recta: %f\n", dlrecta);
 
 	dhoriz = dh(3, 4, 10, 12 );
 	dvert = dv(3, 4, 10, 12);
@@ -18,5 +18,4 @@ int main(int argc, char *argv[]) {
 	printf("Distancia vertical: %d\n", dvert);
 
 	return 0;
-
 }
